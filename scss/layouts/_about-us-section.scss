@@ -1,0 +1,50 @@
+.about-us {
+    color: var(--color-primary-dark);
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.7;
+
+    &__container {
+        display: flex;
+        gap: 28px;
+    }
+
+    &__text {
+        flex-basis: calc(60% - 14px);
+        padding-top: 40px;
+
+        h2 {
+            margin-bottom: 40px;
+        }
+
+        p {
+            margin-bottom: 40px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__image {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        flex-basis: calc(40% - 14px);
+        position: relative;
+        z-index: 2;
+
+        img {
+            border-radius: 50%;
+
+            &:first-child {
+                align-self: flex-start;
+            }
+
+            &:last-child {
+                align-self: flex-end;
+            }
+        }
+    }
+}

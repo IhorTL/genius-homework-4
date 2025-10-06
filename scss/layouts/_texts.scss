@@ -1,0 +1,29 @@
+.brand-accent {
+    color: var(--color-primary-brand);
+}
+
+.brand-style {
+    text-transform: capitalize;
+    color: var(--color-primary-brand);
+}
+
+.brand-accent-dark {
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.intro-title {
+    color: var(--color-primary-brand);
+    text-transform: capitalize;
+    font-family: 'Play', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 0.9;
+    margin: 0;
+    padding: 0;
+
+    span {
+            display: block;   }
+}
+
+ 

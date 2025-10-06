@@ -1,0 +1,120 @@
+.footer {
+    position: relative;
+    background-image: url('../images/footer.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media screen and (min-device-pixel-ratio: 2) {
+            background-image: url('./images/footer@2x.jpg');
+        }
+
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 247px;
+        height: 152px;
+        background-image: url('./images/beauty-product.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 0;
+        pointer-events: none;
+
+        @media screen and (min-device-pixel-ratio: 2) {
+                background-image: url('./images/beauty-product@2x.png');
+            }
+    }
+
+    &__contact-us-container {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 58px;
+        padding-bottom: 56px;
+        gap: 186px;
+    }
+
+    &__navigation {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.1;
+            font-style: normal;
+            color: var(--color-primary-light);
+
+            &:hover {
+                color: var(--color-primary-brand);
+            }
+        }
+    }
+
+    &__adress {
+        a {
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.1;
+            font-style: normal;
+            color: var(--color-primary-light);
+            &:hover {
+                color: var(--color-primary-brand);
+            }
+        }
+    }
+
+    &__adress-list {
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+    }
+
+    &__contacts {
+        display: flex;
+        margin-top: 16px;
+        gap: 24px;
+    }
+
+    &__logo-icon {
+        fill: var(--color-primary-light);
+    }
+
+    &__address-link {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.1;
+        font-style: normal;
+        color: var(--color-primary-light);
+
+        &:hover {
+            color: var(--color-primary-brand);
+        }
+    }
+
+    &__privacy-policy {
+        p {
+            margin-top: 16px;
+            margin-bottom: 0;
+        }
+    }
+
+    &__copyright {
+        color: var(--color-secondary-light);
+        font-family: 'Roboto', sans-serif;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.1;
+        font-style: normal;
+    }
+}
