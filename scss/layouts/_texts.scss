@@ -14,13 +14,18 @@
 
 .intro-title {
     color: var(--color-primary-brand);
-    text-transform: capitalize;
-    font-family: 'Play', sans-serif;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 0.9;
-    margin: 0;
-    padding: 0;
+        text-transform: capitalize;
+        font-family: 'Play', sans-serif;
+        font-weight: 700;
+        line-height: 0.9;
+        margin: 0;
+        padding: 0;
+    font-size: 16px;
+
+    @media screen and (min-width: $bp-tablet) {
+                font-size: 22px;
+                padding: 0;
+        }
 
     span {
             display: block;   }

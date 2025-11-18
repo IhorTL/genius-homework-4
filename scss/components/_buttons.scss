@@ -2,14 +2,21 @@
     color: var(--color-primary-light);
     background-color: var(--color-primary-brand);
     border: 2px solid var(--color-primary-brand);
-    border-radius: 32px;
+    border-radius: 24px;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     line-height: 1.1;
-    padding: 16px 32px 16px 32px;
-    margin-top: 40px;
+    padding: 16px 24px 16px 24px;
+    margin-top: 32px;
+
+    @media screen and (min-width: $bp-tablet) {
+border-radius: 32px;
+font-size: 18px;
+padding: 16px 32px 16px 32px;
+margin-top: 40px;
+    }
 
     &:hover {
             color: var(--color-primary-dark);

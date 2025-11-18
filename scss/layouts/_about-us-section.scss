@@ -1,39 +1,73 @@
 .about-us {
     color: var(--color-primary-dark);
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 1.7;
+
+    @media screen and (min-width: $bp-tablet) {
+            font-size: 22px;
+        }
 
     &__container {
         display: flex;
         gap: 28px;
+
     }
 
-    &__text {
-        flex-basis: calc(60% - 14px);
-        padding-top: 40px;
-
-        h2 {
-            margin-bottom: 40px;
-        }
+        &__text {
+            flex-basis: calc(80% - 14px);
+            padding-top: 0;
+            text-align: left;
+    
+            @media screen and (min-width: $bp-tablet) {
+                flex-basis: calc(60% - 14px);
+            }
+    
+            h2 {
+                margin-bottom: 24px;
+    
+                span {
+                    display: block;
+                }
+    
+                @media screen and (min-width: $bp-tablet) {
+                    margin-bottom: 40px;
+        
+                    span {
+                        display: inline;
+                    }
+                }
+            }
+        
 
         p {
-            margin-bottom: 40px;
+            margin-bottom: 16px;
+
+            @media screen and (min-width: $bp-tablet) {
+                    margin-bottom: 40px;
+                }
 
             &:last-child {
                 margin-bottom: 0;
             }
         }
+
+                @media screen and (min-width: $bp-tablet) {
+                padding-top: 40px;
+                }
     }
 
+   
+
     &__image {
-        display: flex;
-        flex-direction: column;
-        gap: 40px;
-        flex-basis: calc(40% - 14px);
-        position: relative;
-        z-index: 2;
+        display: none;
+        
+            flex-direction: column;
+            gap: 40px;
+            flex-basis: calc(40% - 14px);
+            position: relative;
+            z-index: 2;
 
         img {
             border-radius: 50%;
@@ -47,4 +81,11 @@
             }
         }
     }
+
+    @media screen and (min-width: $bp-tablet) {
+        &__image {
+            display: flex;
+        }
+    }
 }
+

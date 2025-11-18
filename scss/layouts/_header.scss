@@ -1,30 +1,55 @@
 .header-container {
-    background-image: image-set(url("../images/medical-background.png") 1x, url("../images/medical-background@2x.png") 2x);
-    background-repeat: no-repeat;
-    background-position: right top;
-    background-size: contain;
-    min-height: 687px;
-    padding-bottom: 125px;
+    padding-bottom: 56px;
+    position: relative;
+        background-image: image-set(url("../images/medical-background.png") 1x, url("../images/medical-background@2x.png") 2x);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: cover;
+        min-height: 400px;
+
+    @media screen and (min-width: $bp-tablet) {
+                padding-bottom: 125px;
+                min-height: 687px;
+        }
+    
+
 
     &__top-bar {
-        backdrop-filter: blur(10px);
-        background-color: rgba(255, 255, 255, 0.25);
-    }
+        backdrop-filter: none;
+            background-color: transparent;
+            
+    
+            @media screen and (min-width: $bp-desktop) {
+                backdrop-filter: blur(10px);
+                    background-color: rgba(255, 255, 255, 0.25);
+            }
+        }
 
     &__menu {
-        display: flex;
-        gap: 240px;
-        justify-content: space-between;
+    display: flex;
         align-items: center;
-        padding-top: 32px;
-        padding-bottom: 32px;
+        justify-content: space-between;
+        gap: 16px;
+        padding-top: 16px;
+        padding-bottom: 20px;
+
+        @media screen and (min-width: $bp-tablet) {
+                padding-top: 32px;
+                    padding-bottom: 32px;
+            }
     }
 
+
     &__list {
-        display: flex;
-        gap: 56px;
-        padding: 0;
-        margin: 0;
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+            
+            display: flex;
+                gap: 56px;
+                padding: 0;
+                margin: 0;
+        }
     }
 
     &__link {
@@ -40,13 +65,34 @@
     }
 
     &__logo-contacts {
-        padding: 0;
-        display: flex;
-        gap: 32px;
-        margin: 0;
+        display: none;
+
+        @media screen and (min-width: $bp-desktop) {
+                
+                padding: 0;
+                    display: flex;
+                    gap: 32px;
+                    margin: 0;
+            }
     }
 
     &__address-icon {
         fill: var(--color-primary-dark);
     }
-}
+
+    &__burger {
+        display: block;
+            flex: 0 0 auto;
+            margin-left: auto;
+            background-color: transparent;
+            border: none;
+            fill: var(--color-primary-light);
+            padding: 0;
+            width: 24px;
+            height: 24px;
+
+@media screen and (min-width: $bp-desktop) {
+    display: none;
+    }
+
+        }    }

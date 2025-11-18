@@ -21,7 +21,11 @@
   }
   
   .modal {
-    background-image: url(../images/footer.jpg);
+    background-color: var(--color-primary-dark);
+  background-image: image-set(
+    url("../images/footer.png") 1x,
+    url("../images/footer@2x.png") 2x
+  );
     border-radius: 48px;
     padding: 42px 144px;
     max-width: 723px;

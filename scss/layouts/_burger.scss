@@ -1,0 +1,50 @@
+.burger {
+  padding: 16px;
+  padding-left: 20px;
+
+  &__nav {
+    padding-top: 32px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 16px;
+  }
+  &__list li:first-child .burger__link {
+    color: var(--color-primary-brand);
+    font-weight: 700;
+  }
+
+  &__logo-contacts {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    gap: 16px;
+    fill: var(--color-primary-dark);
+  }
+  &__link {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--color-primary-dark);
+
+    &:hover {
+      color: var(--color-primary-brand);
+    }
+  }
+  &__close-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--color-primary-dark);
+    stroke: var(--color-primary-dark);
+  }
+}
+
+.mobile-menu__btn-close {
+  padding: 0;
+  background: none;
+  border: none;
+}

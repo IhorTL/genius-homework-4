@@ -1,43 +1,83 @@
 .hero-section {
+    align-items: center;
+
+    @media screen and (min-width: $bp-tablet) {
     padding-left: 106px;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    
+    }
 
     &__title {
-        color: var(--color-primary-brand);
-        font-family: 'Play', sans-serif;
-        font-size: 140px;
+        font-size: 54px;
         font-weight: 700;
-        line-height: 0.8;
-        text-transform: capitalize;
-        margin-bottom: 0;
-    }
+            line-height: 0.8;
+            text-transform: capitalize;
+            margin-bottom: 0;
+            color: var(--color-primary-brand);
+                font-family: 'Play', sans-serif;
+                text-align: center;
+
+                @media screen and (min-width: $bp-tablet) {
+                        font-size: 140px;
+                text-align: left;
+                    }
+        }
+
+                &__title br {
+                    display: none;
+                }
+        
+                @media screen and (min-width: $bp-tablet) {
+                    &__title br {
+                        display: inline;
+                    }
+                }
+
+    
 
     &__subtitle {
         font-family: 'Roboto', sans-serif;
-        font-size: 18px;
+        font-size: 12px;
         font-weight: 400;
         line-height: 1.1;
         margin-top: 0;
-        padding-top: 16px;
-        margin-bottom: 16px;
+        padding-top: 5px;
+        margin-bottom: 8px;
+        text-align: center;
+
+        @media screen and (min-width: $bp-tablet) {
+                text-align: left;
+                font-size: 18px;
+                margin-bottom: 16px;
+                padding-top: 16px;
+            }
     }
 
     &__button-container {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 8px;
+@media screen and (min-width: $bp-tablet) {
         gap: 16px;
+    }
+
     }
 
     &__offer {
         color: var(--color-secondary-dark);
         font-family: 'Roboto', sans-serif;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 400;
         line-height: 1.5;
         text-align: center;
         margin: 0;
+
+        @media screen and (min-width: $bp-tablet) {
+                font-size: 12px;
     }
+}
+
 }

@@ -14,10 +14,19 @@
 
     &.prev {
         left: 0;
+display: none;
+        @media screen and (min-width: $bp-tablet) {
+                display: block;
+            }
     }
 
     &.next {
         right: 0;
+    display: none;
+    
+        @media screen and (min-width: $bp-tablet) {
+            display: block;
+        }
     }
 
     &:hover {

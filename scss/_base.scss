@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
 
@@ -40,13 +45,25 @@ p {
 h2 {
     color: var(--color-primary-dark);
     font-family: 'Play', sans-serif;
-    font-size: 64px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.1;
+
+    @media screen and (min-width: $bp-desktop) {
+            font-size: 64px;
+        }
 }
 
 h2.section-title {
     text-align: center;
-    margin-bottom: 48px;
+    margin-bottom: 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+            margin-bottom: 48px;;
+        }
+}
+
+img {
+    object-fit: cover;
 }
 
